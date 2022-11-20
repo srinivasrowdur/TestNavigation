@@ -11,6 +11,17 @@
 		ACB5C5F929284E420007A74E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C5F829284E420007A74E /* ContentView.swift */; };
 		ACB5C5FB29284E450007A74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5C5FA29284E450007A74E /* Assets.xcassets */; };
 		ACB5C5FF29284E450007A74E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5C5FE29284E450007A74E /* Preview Assets.xcassets */; };
+		ACB5C608292856370007A74E /* PlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C607292856370007A74E /* PlaceHolderView.swift */; };
+		ACB5C60D2928BD940007A74E /* HospitalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C60C2928BD940007A74E /* HospitalMenu.swift */; };
+		ACB5C6102928C17D0007A74E /* ThreeColumnMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C60F2928C17D0007A74E /* ThreeColumnMasterView.swift */; };
+		ACB5C6122928C2CA0007A74E /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C6112928C2CA0007A74E /* NavigationModel.swift */; };
+		ACB5C6142929019B0007A74E /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C6132929019B0007A74E /* Branch.swift */; };
+		ACB5C616292901B70007A74E /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C615292901B70007A74E /* Doctor.swift */; };
+		ACB5C618292901E00007A74E /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C617292901E00007A74E /* Patient.swift */; };
+		ACB5C61A292901F40007A74E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C619292901F40007A74E /* Appointment.swift */; };
+		ACB5C61C2929924A0007A74E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB5C61B292992490007A74E /* GoogleService-Info.plist */; };
+		ACB5C61F292993340007A74E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ACB5C61E292993340007A74E /* FirebaseAuth */; };
+		ACB5C621292993340007A74E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACB5C620292993340007A74E /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,15 @@
 		ACB5C5FA29284E450007A74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB5C5FC29284E450007A74E /* TestNavigation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestNavigation.entitlements; sourceTree = "<group>"; };
 		ACB5C5FE29284E450007A74E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACB5C607292856370007A74E /* PlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderView.swift; sourceTree = "<group>"; };
+		ACB5C60C2928BD940007A74E /* HospitalMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalMenu.swift; sourceTree = "<group>"; };
+		ACB5C60F2928C17D0007A74E /* ThreeColumnMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnMasterView.swift; sourceTree = "<group>"; };
+		ACB5C6112928C2CA0007A74E /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
+		ACB5C6132929019B0007A74E /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		ACB5C615292901B70007A74E /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		ACB5C617292901E00007A74E /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		ACB5C619292901F40007A74E /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		ACB5C61B292992490007A74E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB5C61F292993340007A74E /* FirebaseAuth in Frameworks */,
+				ACB5C621292993340007A74E /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +74,15 @@
 		ACB5C5F529284E420007A74E /* TestNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				ACB5C61B292992490007A74E /* GoogleService-Info.plist */,
+				ACB5C60E2928C14A0007A74E /* Views */,
+				ACB5C6092928BD510007A74E /* Models */,
 				ACB5C5F629284E420007A74E /* TestNavigationApp.swift */,
 				ACB5C5F829284E420007A74E /* ContentView.swift */,
 				ACB5C5FA29284E450007A74E /* Assets.xcassets */,
 				ACB5C5FC29284E450007A74E /* TestNavigation.entitlements */,
 				ACB5C5FD29284E450007A74E /* Preview Content */,
+				ACB5C607292856370007A74E /* PlaceHolderView.swift */,
 			);
 			path = TestNavigation;
 			sourceTree = "<group>";
@@ -67,6 +93,27 @@
 				ACB5C5FE29284E450007A74E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACB5C6092928BD510007A74E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5C60C2928BD940007A74E /* HospitalMenu.swift */,
+				ACB5C6112928C2CA0007A74E /* NavigationModel.swift */,
+				ACB5C6132929019B0007A74E /* Branch.swift */,
+				ACB5C615292901B70007A74E /* Doctor.swift */,
+				ACB5C617292901E00007A74E /* Patient.swift */,
+				ACB5C619292901F40007A74E /* Appointment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACB5C60E2928C14A0007A74E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5C60F2928C17D0007A74E /* ThreeColumnMasterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +132,10 @@
 			dependencies = (
 			);
 			name = TestNavigation;
+			packageProductDependencies = (
+				ACB5C61E292993340007A74E /* FirebaseAuth */,
+				ACB5C620292993340007A74E /* FirebaseFirestoreSwift */,
+			);
 			productName = TestNavigation;
 			productReference = ACB5C5F329284E420007A74E /* TestNavigation.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +164,9 @@
 				Base,
 			);
 			mainGroup = ACB5C5EA29284E420007A74E;
+			packageReferences = (
+				ACB5C61D292993340007A74E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ACB5C5F429284E420007A74E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +183,7 @@
 			files = (
 				ACB5C5FF29284E450007A74E /* Preview Assets.xcassets in Resources */,
 				ACB5C5FB29284E450007A74E /* Assets.xcassets in Resources */,
+				ACB5C61C2929924A0007A74E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB5C6102928C17D0007A74E /* ThreeColumnMasterView.swift in Sources */,
 				ACB5C5F929284E420007A74E /* ContentView.swift in Sources */,
+				ACB5C618292901E00007A74E /* Patient.swift in Sources */,
+				ACB5C616292901B70007A74E /* Doctor.swift in Sources */,
+				ACB5C60D2928BD940007A74E /* HospitalMenu.swift in Sources */,
+				ACB5C608292856370007A74E /* PlaceHolderView.swift in Sources */,
 				ACB5C5F729284E420007A74E /* TestNavigationApp.swift in Sources */,
+				ACB5C6122928C2CA0007A74E /* NavigationModel.swift in Sources */,
+				ACB5C6142929019B0007A74E /* Branch.swift in Sources */,
+				ACB5C61A292901F40007A74E /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +417,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACB5C61D292993340007A74E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACB5C61E292993340007A74E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB5C61D292993340007A74E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ACB5C620292993340007A74E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB5C61D292993340007A74E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACB5C5EB29284E420007A74E /* Project object */;
 }
