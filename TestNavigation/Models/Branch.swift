@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+private struct Branch: Codable, Identifiable, Equatable {
+    @DocumentID var id: String?
+    var name: String
+    var address: String
+}
