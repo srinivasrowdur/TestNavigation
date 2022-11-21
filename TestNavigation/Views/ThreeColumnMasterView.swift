@@ -18,6 +18,7 @@ struct ThreeColumnMasterView: View {
                 List(hospitalMenu, selection: $navigationModel.selectedHospitalMenu) {
                     hospitalMenuItems in NavigationLink(hospitalMenuItems.localizedName,value: hospitalMenuItems)
                 }
+                .navigationTitle("Dr Giri's Dental")
                 
             }, content: {
                 Text("Content")

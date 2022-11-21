@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC89A824292A9F4D00729072 /* BranchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A823292A9F4D00729072 /* BranchListView.swift */; };
+		AC89A826292A9F8900729072 /* DoctorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A825292A9F8900729072 /* DoctorsListView.swift */; };
+		AC89A828292A9F9F00729072 /* PatientsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A827292A9F9F00729072 /* PatientsListView.swift */; };
+		AC89A82A292A9FED00729072 /* AppointmentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A829292A9FED00729072 /* AppointmentsListView.swift */; };
 		ACB5C5F729284E420007A74E /* TestNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C5F629284E420007A74E /* TestNavigationApp.swift */; };
 		ACB5C5F929284E420007A74E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5C5F829284E420007A74E /* ContentView.swift */; };
 		ACB5C5FB29284E450007A74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5C5FA29284E450007A74E /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC89A823292A9F4D00729072 /* BranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListView.swift; sourceTree = "<group>"; };
+		AC89A825292A9F8900729072 /* DoctorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsListView.swift; sourceTree = "<group>"; };
+		AC89A827292A9F9F00729072 /* PatientsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsListView.swift; sourceTree = "<group>"; };
+		AC89A829292A9FED00729072 /* AppointmentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsListView.swift; sourceTree = "<group>"; };
 		ACB5C5F329284E420007A74E /* TestNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB5C5F629284E420007A74E /* TestNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationApp.swift; sourceTree = "<group>"; };
 		ACB5C5F829284E420007A74E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				ACB5C60F2928C17D0007A74E /* ThreeColumnMasterView.swift */,
+				AC89A825292A9F8900729072 /* DoctorsListView.swift */,
+				AC89A823292A9F4D00729072 /* BranchListView.swift */,
+				AC89A827292A9F9F00729072 /* PatientsListView.swift */,
+				AC89A829292A9FED00729072 /* AppointmentsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,11 +210,15 @@
 				ACB5C5F929284E420007A74E /* ContentView.swift in Sources */,
 				ACB5C618292901E00007A74E /* Patient.swift in Sources */,
 				ACB5C616292901B70007A74E /* Doctor.swift in Sources */,
+				AC89A82A292A9FED00729072 /* AppointmentsListView.swift in Sources */,
 				ACB5C60D2928BD940007A74E /* HospitalMenu.swift in Sources */,
+				AC89A826292A9F8900729072 /* DoctorsListView.swift in Sources */,
+				AC89A824292A9F4D00729072 /* BranchListView.swift in Sources */,
 				ACB5C608292856370007A74E /* PlaceHolderView.swift in Sources */,
 				ACB5C5F729284E420007A74E /* TestNavigationApp.swift in Sources */,
 				ACB5C6122928C2CA0007A74E /* NavigationModel.swift in Sources */,
 				ACB5C6142929019B0007A74E /* Branch.swift in Sources */,
+				AC89A828292A9F9F00729072 /* PatientsListView.swift in Sources */,
 				ACB5C61A292901F40007A74E /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
