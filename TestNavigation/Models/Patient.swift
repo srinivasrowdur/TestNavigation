@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+private struct Patient: Codable, Identifiable, Equatable {
+    @DocumentID var id: String?
+    var name: String
+    var age: Int
+
+}
+
