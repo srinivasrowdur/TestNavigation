@@ -6,11 +6,39 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
+
+private struct Branch: Codable, Identifiable, Equatable {
+    @DocumentID var id: String?
+    var name: String
+    var address: String
+}
 
 struct BranchListView: View {
+    
+    @EnvironmentObject private var navigationModel :NavigationModel
+    @FirestoreQuery(
+        collectionPath: "branches"
+        ) fileprivate var branches: [Branch]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List (branches) { branch in
+            
+            VStack(alignment: .leading) {
+                Text(branch.name)
+                    .font(.largeTitle)
+                    
+                   
+                Text(branch.address)
+                    .fontWeight(.light)
+                    
+                
+            }
+        }
+        .navigationTitle("Branches")
     }
+        
+      
 }
 
 struct BranchListView_Previews: PreviewProvider {

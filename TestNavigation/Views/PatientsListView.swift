@@ -6,10 +6,38 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
+
+private struct Patient: Codable, Identifiable, Equatable {
+    @DocumentID var id: String?
+    var name: String
+    var age: Int
+
+}
+
 
 struct PatientsListView: View {
+    @EnvironmentObject private var navigationModel :NavigationModel
+    @FirestoreQuery(
+        collectionPath: "patients"
+        ) fileprivate var patients: [Patient]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List (patients) { patient in
+            
+            HStack{
+                
+                    Text(patient.name)
+                        .font(.largeTitle)
+                Spacer()
+                
+                Text("\(patient.age)")
+                        .font(.largeTitle)
+                    
+             
+              
+            }
+        }
+        .navigationTitle("Patients")
     }
 }
 

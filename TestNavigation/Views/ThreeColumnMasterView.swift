@@ -21,7 +21,7 @@ struct ThreeColumnMasterView: View {
                 .navigationTitle("Dr Giri's Dental")
                 
             }, content: {
-                Text("Content")
+                ThreeColumDetailView()
                 
             }, detail: {
                 Text("Detail")})
