@@ -15,15 +15,28 @@ private struct Branch: Codable, Identifiable, Equatable {
 }
 
 struct BranchListView: View {
-    
+    @State private var text: String = ""
+
     @EnvironmentObject private var navigationModel :NavigationModel
     @FirestoreQuery(
         collectionPath: "branches"
         ) fileprivate var branches: [Branch]
     
+    private var filteredBranches: [Branch] {
+        if text.isEmpty {
+            return branches
+        }
+        else {
+            let filteredBranches = branches.filter {
+                $0.name.contains(text)
+                
+            }
+            return filteredBranches
+        }
+    }
+  
     var body: some View {
-        List (branches) { branch in
-            
+        List (filteredBranches) { branch in
             VStack(alignment: .leading) {
                 Text(branch.name)
                     .font(.largeTitle)
@@ -36,6 +49,13 @@ struct BranchListView: View {
             }
         }
         .navigationTitle("Branches")
+        .searchable(text: $text)
+        .onSubmit(of: .search) {
+                //submitCurrentSearchQuery()
+           
+            }
+        
+        
     }
         
       

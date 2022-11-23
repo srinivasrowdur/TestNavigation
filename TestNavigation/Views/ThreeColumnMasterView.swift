@@ -9,22 +9,26 @@ import SwiftUI
 
 struct ThreeColumnMasterView: View {
     
+   
     @EnvironmentObject private var navigationModel :NavigationModel
     var hospitalMenu = HospitalMenu.allCases
     
     var body: some View {
-        NavigationSplitView(
-            sidebar: {
+        NavigationSplitView {
                 List(hospitalMenu, selection: $navigationModel.selectedHospitalMenu) {
                     hospitalMenuItems in NavigationLink(hospitalMenuItems.localizedName,value: hospitalMenuItems)
                 }
                 .navigationTitle("Dr Giri's Dental")
                 
-            }, content: {
+            } content: {
                 ThreeColumDetailView()
+                   
                 
-            }, detail: {
-                Text("Detail")})
+            } detail: {
+                Text("Detail")
+                
+            }
+           
     
     }
 }
